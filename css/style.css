@@ -573,6 +573,7 @@ header i:nth-child(1) {
 
 footer {
   background: #2c2828;
+  margin-top: 50px;
   padding-top: 40px;
 }
 
