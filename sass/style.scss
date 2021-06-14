@@ -33,7 +33,10 @@ p, a span{
 i {
     cursor: pointer;
 }
-
+.btn {
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
 .container {
     width: 90%;
     margin: 0 auto;
@@ -420,6 +423,115 @@ header {
     }
 }
 
+// CONTACT-QISMI
+.contact {
+    margin-bottom: 100px;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        .img__block{
+            width: 650px;
+
+            img {
+                width: 100%;
+            }
+        }
+        .forma__block {
+            width: 680px;
+            background: #fff;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+            padding: 35px;
+            height: 100%;
+
+
+            .email {
+                width: 100%;
+            }
+            .aftanomm {
+                margin-left: 20px;
+            }
+            input, textarea {
+                width: 48%;
+                height: 55px;
+                margin-top: 20px;
+                padding-left: 20px;
+                border-radius: 7px;
+                border: none;
+                background: rgb(247, 245, 245);
+                outline: none;
+
+            }
+            textarea {
+                outline: none;
+                color: #111;
+                height: 50%;
+                width: 100%;
+                padding: 20px;
+                font-size: 17px;
+                font-weight: 400;
+                outline: none;
+                border-radius: 5px;
+                resize: none;
+                margin-bottom: 40px;
+            }
+        } 
+    }
+}
+
+// BREND-QISMI
+.brend {
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+// FOOTER
+footer {
+    background: rgb(44, 40, 40);
+    padding-top: 40px;
+    
+    .big__row {
+        margin-bottom: 20px;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap:1.5rem;
+
+        p {
+            padding-top: 15px;
+        }
+        ul li a {
+            color: #eee;
+            display: inline-block;
+            margin: 10px 0;
+            font-size: 18px;
+            font-family: 'Nunito', sans-serif;
+
+            &:hover {
+                color: var(--orange);
+                text-decoration:underline;
+            }
+        }
+    }
+    .developer {
+        text-align: center;
+        color: #eee;
+        border-top: .1rem solid rgba(255,255,255,.2);
+        padding: 20px 0;
+
+        a {
+            color:var(--orange);
+        }
+    }
+}
 
 
 
@@ -428,12 +540,12 @@ header {
 
 
 
-
-
-
-
-
-
+// 1478
+@media (max-width: 1480px) {
+    .contact .row .img__block {
+        width: 600px;
+    }
+}
 // 1432px
 @media (max-width: 1430px) {
     .pakages .row__top .travel__cards .card__one #end__img {
@@ -550,6 +662,15 @@ header {
         width: 80%;
     }
 }
+// 745px
+@media (max-width: 745px) {
+    .contact .row .forma__block .aftanomm {
+        margin-left: 0;
+    }
+    .contact .row .forma__block textarea {
+        width: 97%;
+    }
+}
 // 730px
 @media (max-width: 730px) {
     .gallery__img {
@@ -570,4 +691,24 @@ header {
         }
     }
     
+}
+// 500px
+@media (max-width: 500px) {
+    .contact .row .forma__block input, .contact .row .forma__block textarea {
+        width: 100%;
+    }
+}
+// 375px
+@media (max-width: 375px) {
+    .contact .row .forma__block {
+        padding: 20px;
+        
+        .btn {
+            display: block;
+            text-align: center;
+        }
+    }
+    .contact .row .forma__block textarea {
+        margin-bottom: 0;
+    }    
 }

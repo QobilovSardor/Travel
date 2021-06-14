@@ -40,6 +40,11 @@ i {
   cursor: pointer;
 }
 
+.btn {
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -489,6 +494,135 @@ header i:nth-child(1) {
   margin: 20px 0;
 }
 
+.contact {
+  margin-bottom: 100px;
+}
+
+.contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .row .img__block {
+  width: 650px;
+}
+
+.contact .row .img__block img {
+  width: 100%;
+}
+
+.contact .row .forma__block {
+  width: 680px;
+  background: #fff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  padding: 35px;
+  height: 100%;
+}
+
+.contact .row .forma__block .email {
+  width: 100%;
+}
+
+.contact .row .forma__block .aftanomm {
+  margin-left: 20px;
+}
+
+.contact .row .forma__block input, .contact .row .forma__block textarea {
+  width: 48%;
+  height: 55px;
+  margin-top: 20px;
+  padding-left: 20px;
+  border-radius: 7px;
+  border: none;
+  background: #f7f5f5;
+  outline: none;
+}
+
+.contact .row .forma__block textarea {
+  outline: none;
+  color: #111;
+  height: 50%;
+  width: 100%;
+  padding: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  margin-bottom: 40px;
+}
+
+.brend .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer {
+  background: #2c2828;
+  padding-top: 40px;
+}
+
+footer .big__row {
+  margin-bottom: 20px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1.5rem;
+}
+
+footer .big__row p {
+  padding-top: 15px;
+}
+
+footer .big__row ul li a {
+  color: #eee;
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+}
+
+footer .big__row ul li a:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+footer .developer {
+  text-align: center;
+  color: #eee;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+  padding: 20px 0;
+}
+
+footer .developer a {
+  color: var(--orange);
+}
+
+@media (max-width: 1480px) {
+  .contact .row .img__block {
+    width: 600px;
+  }
+}
+
 @media (max-width: 1430px) {
   .pakages .row__top .travel__cards .card__one #end__img {
     height: auto;
@@ -603,6 +737,15 @@ header i:nth-child(1) {
   }
 }
 
+@media (max-width: 745px) {
+  .contact .row .forma__block .aftanomm {
+    margin-left: 0;
+  }
+  .contact .row .forma__block textarea {
+    width: 97%;
+  }
+}
+
 @media (max-width: 730px) {
   .gallery__img {
     margin-top: 20px;
@@ -623,6 +766,25 @@ header i:nth-child(1) {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact .row .forma__block input, .contact .row .forma__block textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact .row .forma__block {
+    padding: 20px;
+  }
+  .contact .row .forma__block .btn {
+    display: block;
+    text-align: center;
+  }
+  .contact .row .forma__block textarea {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
