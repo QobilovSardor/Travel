@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel</title>
+    <link rel="shortcut icon" href="img/contact-img.svg" type="image/x-icon">
+	 <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- css-link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body  id="home">
+	
+    <header>
+        <div class="container">
+            <!-- header__logo -->
+            <div class="header__logo">
+                <h1><a href="#"><span>T</span>RAVEL</a></h1>
+            </div>
+            <!-- header__navbar -->
+            <div class="header__navbar">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fa fa-bars dropdovn" aria-hidden="true"></i>
+                    </label>
+        
+                    <ul>
+                        <li><a href="#home" id="one">Home</a></li>
+                        <li><a href="#book">Book</a></li>
+                        <li><a href="#pakages">Pakages</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#review">Review</a></li>
+                        <li><a href="#contact" id="end">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- header__icon -->
+            <div class="header__icon">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- midle -->
+    <section class="section__midle">
+        <div class="section__video">
+            <video src="img/vid-1.mp4" id="video-slider" loop="" autoplay="" muted=""></video>
+        </div>
+        <div class="container">
+            <div class="section__text">
+                <h1>ADVENTURE IS WORTHWHILE</h1>
+                <h3>Dicover New Places With Us, Adventure Awaits</h3>
+                <div class="section__button">
+                    <button class="btn">Discover More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOK-QISMI// -->
+    <div class="container">
+        <div class="book" id="book">
+            <div class="title__text">
+                <span>B</span>
+                <span>O</span>
+                <span>O</span>
+                <span>K</span>
+                <span>N</span>
+                <span>O</span>
+                <span>W</span>
+            </div>
+            <div class="row">
+                <div class="book__img">
+                    <img src="img/book-img.svg" alt="book-img">
+                </div>
+                <div class="book__registr">
+                    <form action="forma">
+                        <h2>Where To</h2>
+                        <input type="search" name="search" placeholder="search places">
+                        <h2>How Many</h2>
+                        <input type="number" name="number" placeholder="number of guests">
+                        <h2>Arrivals</h2>
+                        <!-- <input type="date" name="date" > -->
+                        <input type="date" name="date">
+                        <!-- <input type="date" name="date" > -->
+                        <h2>Leaving</h2>
+                        <input type="date" name="date">
+                        <button class="btn">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAKAGES-QSIMI -->
+    <div class="pakages" id="pakages">
+        <div class="container">
+            <div class="title__text">
+                <span>P</span>
+                <span>A</span>
+                <span>K</span>
+                <span>A</span>
+                <span>G</span>
+                <span>G</span>
+                <span>E</span>
+                <span>S</span>
+            </div>
+            <div class="row__top">
+                <div class="travel__cards">
+                    <div class="card__one">
+                        <img src="img/p-1.jpg" alt="p-1">
+                        <div class="card__text">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                                <h2>Mumbai</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Accusantium, voluptatum.</p>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <div class="card__mony">
+                                <h2>$90.00</h2>
+                                <h4>$120.00</h4>
+                            </div>
+                            <button class="btn">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- 2// -->
+                    <div class="card__one">
+                        <img src="img/p-2.jpg" alt="p-1">
+                        <div class="card__text">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                                <h2>Hawaii</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Accusantium, voluptatum.</p>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <div class="card__mony">
+                                <h2>$90.00</h2>
+                                <h4>$120.00</h4>
+                            </div>
+                            <button class="btn">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- 3// -->
+                    <div class="card__one">
+                        <img src="img/p-3.jpg" alt="p-1" id="end__img">
+                        <div class="card__text">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                                <h2>Sydney</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Accusantium, voluptatum.</p>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <div class="card__mony">
+                                <h2>$90.00</h2>
+                                <h4>$120.00</h4>
+                            </div>
+                            <button class="btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2// -->
+            <div class="row__top">
+                <div class="travel__cards">
+                    <div class="card__one">
+                        <img src="img/p-4.jpg" alt="p-1">
+                        <div class="card__text">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                                <h2>Paris</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Accusantium, voluptatum.</p>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <div class="card__mony">
+                                <h2>$90.00</h2>
+                                <h4>$120.00</h4>
+                            </div>
+                            <button class="btn">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- 2// -->
+                    <div class="card__one">
+                        <img src="img/p-5.jpg" alt="p-1">
+                        <div class="card__text">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                                <h2>Tokyo</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Accusantium, voluptatum.</p>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <div class="card__mony">
+                                <h2>$90.00</h2>
+                                <h4>$120.00</h4>
+                            </div>
+                            <button class="btn">Book Now</button>
+                        </div>
+                    </div>
+                    <!-- 3// -->
+                    <div class="card__one">
+                        <img src="img/p-6.jpg" alt="p-1">
+                        <div class="card__text">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                                <h2>Egypt</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Accusantium, voluptatum.</p>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            </i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <div class="card__mony">
+                                <h2>$90.00</h2>
+                                <h4>$120.00</h4>
+                            </div>
+                            <button class="btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES-QISMI -->
+    <div class="services" id="services">
+        <div class="container">
+            <div class="title__text">
+                <span>S</span>
+                <span>E</span>
+                <span>R</span>
+                <span>V</span>
+                <span>I</span>
+                <span>K</span>
+                <span>E</span>
+                <span>S</span>
+            </div>
+            <div class="row">
+                <div class="cards">
+                    <div class="card__top">
+                        <div class="card">
+                            <i class="fas fa-hotel fa-3x"></i>
+                            <h2>Affordable Hotels</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut nemo dicta odio omnis reiciendis aliquam ex. Assumenda quasi harum aliquid!</p>
+                        </div>
+                        <!-- 2// -->
+                        <div class="card">
+                            <i class="fas fa-utensils fa-3x"></i>
+                            <h2>Affordable Hotels</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut nemo dicta odio omnis reiciendis aliquam ex. Assumenda quasi harum aliquid!</p>
+                        </div>
+                        <!-- 3// -->
+                        <div class="card">
+                            <i class="fas fa-bullhorn fa-3x"></i>
+                            <h2>Affordable Hotels</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut nemo dicta odio omnis reiciendis aliquam ex. Assumenda quasi harum aliquid!</p>
+                        </div>
+                        <!--  -->
+                    </div>
+                    <!-- 2// -->
+                    <div class="card__top">
+                        <div class="card">
+                            <i class="fas fa-globe-asia fa-3x"></i>
+                            <h2>Affordable Hotels</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut nemo dicta odio omnis reiciendis aliquam ex. Assumenda quasi harum aliquid!</p>
+                        </div>
+                        <!-- 2// -->
+                        <div class="card">
+                            <i class="fas fa-plane fa-3x"></i>
+                            <h2>Affordable Hotels</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut nemo dicta odio omnis reiciendis aliquam ex. Assumenda quasi harum aliquid!</p>
+                        </div>
+                        <!-- 3// -->
+                        <div class="card">
+                            <i class="fas fa-hiking fa-3x"></i>
+                            <h2>Affordable Hotels</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut nemo dicta odio omnis reiciendis aliquam ex. Assumenda quasi harum aliquid!</p>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY-QISMI -->
+    <div class="gallery" id="gallery">
+        <div class="container">
+            <div class="title__text">
+                <span>G</span>
+                <span>A</span>
+                <span>L</span>
+                <span>L</span>
+                <span>E</span>
+                <span>R</span>
+                <span>Y</span>
+            </div>
+            <div class="gallery__cards">
+                <div class="gallery__img">
+                    <img src="img/g-1.jpg" alt="g-1">
+                </div>
+                <!-- 2// -->
+                <div class="gallery__img">
+                    <img src="img/g-2.jpg" alt="g-1">
+                </div>
+                <!-- 3// -->
+                <div class="gallery__img" id="aftanom">
+                    <img src="img/g-3.jpg" alt="g-1">
+                </div>
+            </div>
+
+            <!-- 2// -->
+            <div class="gallery__cards">
+                <div class="gallery__img">
+                    <img src="img/g-4.jpg" alt="g-1">
+                </div>
+                <!-- 2// -->
+                <div class="gallery__img">
+                    <img src="img/g-5.jpg" alt="g-1">
+                </div>
+                <!-- 3// -->
+                <div class="gallery__img" id="aftanom">
+                    <img src="img/g-6.jpg" alt="g-1">
+                </div>
+            </div>
+
+            <!-- 3// -->
+            <div class="gallery__cards">
+                <div class="gallery__img">
+                    <img src="img/g-7.jpg" alt="g-1">
+                </div>
+                <!-- 2// -->
+                <div class="gallery__img">
+                    <img src="img/g-8.jpg" alt="g-1">
+                </div>
+                <!-- 3// -->
+                <div class="gallery__img" id="aftanom">
+                    <img src="img/g-9.jpg" alt="g-1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- USER-QISMI -->
+    <div class="user" id="review">
+        <div class="container">
+            <div class="title__text">
+                <span>R</span>
+                <span>E</span>
+                <span>V</span>
+                <span>I</span>
+                <span>E</span>
+                <span>W</span>
+            </div>
+
+            <div class="user__cards">
+                <div class="user__card">
+                    <img src="img/pic1.png" alt="pic1">
+                    <h2>John Deo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt voluptatibus voluptas, nam corporis fuga esse, quo vel a, at amet ut enim rem! Magnam neque laborum accusantium nobis, molestiae possimus.</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <!-- 2// -->
+                <div class="user__card">
+                    <img src="img/pic2.png" alt="pic1">
+                    <h2>John Deo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt voluptatibus voluptas, nam corporis fuga esse, quo vel a, at amet ut enim rem! Magnam neque laborum accusantium nobis, molestiae possimus.</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <!-- 3// -->
+                <div class="user__card">
+                    <img src="img/pic3.png" alt="pic1">
+                    <h2>John Deo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt voluptatibus voluptas, nam corporis fuga esse, quo vel a, at amet ut enim rem! Magnam neque laborum accusantium nobis, molestiae possimus.</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <!-- 2// -->
+            <div class="user__cards">
+                
+                <!-- 4// -->
+                <div class="user__card">
+                    <img src="img/pic4.png" alt="pic1">
+                    <h2>John Deo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt voluptatibus voluptas, nam corporis fuga esse, quo vel a, at amet ut enim rem! Magnam neque laborum accusantium nobis, molestiae possimus.</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

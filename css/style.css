@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+:root {
+  --orange:#ffa500;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+}
+
+p, a span {
+  font-family: 'Nunito', sans-serif;
+}
+
+i {
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #333;
+  padding: 1rem 0;
+  z-index: 200;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header__logo h1 a {
+  color: #fff;
+}
+
+header .header__logo h1 a span {
+  color: var(--orange);
+}
+
+header .header__navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header__navbar ul li a {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 .8rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+header .header__navbar ul li a:hover {
+  color: var(--orange);
+}
+
+header .header__navbar ul #one, header .header__navbar ul #end {
+  margin: 0;
+}
+
+header i {
+  color: #fff;
+  cursor: pointer;
+  padding-left: 15px;
+  font-size: 22px;
+}
+
+header i:hover {
+  color: var(--orange);
+}
+
+header i:nth-child(1) {
+  padding: 0;
+  margin: 0;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+.dropdovn {
+  display: none;
+}
+
+.section__midle .section__video video {
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+}
+
+.section__midle .section__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+.section__midle .section__text h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.section__midle .section__text h3 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.section__midle .section__text .btn {
+  color: #fff;
+  background: var(--orange);
+  padding: 13px 35px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 1px solid var(--orange);
+}
+
+.section__midle .section__text .btn:hover {
+  background: rgba(255, 165, 0, 0.2);
+}
+
+.title__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title__text span {
+  color: var(--orange);
+  background-color: #fffbc0;
+  margin: 3px;
+  border-radius: 4px;
+  padding: 2px 15px;
+  font-size: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.btn {
+  color: #fff;
+  background: var(--orange);
+  padding: 18px 40px;
+  border: none;
+  font-size: 18px;
+  margin-top: 22px;
+  border: 1px solid var(--orange);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #000;
+}
+
+.book {
+  margin-top: 100px;
+}
+
+.book .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.book .row .book__img {
+  width: 50%;
+}
+
+.book .row .book__img img {
+  width: 100%;
+}
+
+.book .row .book__registr {
+  margin-top: 40px;
+  width: 47%;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.book .row .book__registr h2 {
+  color: #555;
+  padding: 15px 0;
+}
+
+.book .row .book__registr input {
+  padding: 15px 15px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #dbd6d6;
+}
+
+.pakages {
+  margin-bottom: 100px;
+}
+
+.pakages .row__top .travel__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.pakages .row__top .travel__cards .card__one {
+  background: #fff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  width: 430px;
+  margin-top: 50px;
+}
+
+.pakages .row__top .travel__cards .card__one #end__img {
+  height: 50%;
+}
+
+.pakages .row__top .travel__cards .card__one img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 100%;
+}
+
+.pakages .row__top .travel__cards .card__one .card__text {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.pakages .row__top .travel__cards .card__one .card__text p {
+  color: #5c5858;
+}
+
+.pakages .row__top .travel__cards .card__one .card__text .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+}
+
+.pakages .row__top .travel__cards .card__one .card__text .icon i {
+  color: var(--orange);
+  padding-right: 10px;
+}
+
+.pakages .row__top .travel__cards .card__one .card__text i {
+  color: var(--orange);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pakages .row__top .travel__cards .card__one .card__text .card__mony {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pakages .row__top .travel__cards .card__one .card__text .card__mony h2 {
+  color: #5c5858;
+}
+
+.pakages .row__top .travel__cards .card__one .card__text .card__mony h4 {
+  position: relative;
+  margin-left: 10px;
+  color: #ccc;
+}
+
+.pakages .row__top .travel__cards .card__one .card__text .card__mony h4::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background: #ccc;
+  width: 100%;
+  height: 1px;
+}
+
+.pakages .row__top .travel__cards .card__one .card__text .btn {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.services {
+  margin-bottom: 100px;
+}
+
+.services .card__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 70px;
+}
+
+.services .card__top .card {
+  background: #fff;
+  width: 400px;
+  padding: 30px;
+  text-align: center;
+}
+
+.services .card__top .card:hover {
+  -webkit-box-shadow: 0px 10px 30px -3px #ccc;
+          box-shadow: 0px 10px 30px -3px #ccc;
+}
+
+.services .card__top .card i {
+  color: var(--orange);
+  padding-bottom: 10px;
+}
+
+.services .card__top .card h2, .services .card__top .card p {
+  color: #494848;
+}
+
+.services .card__top .card h2 {
+  padding-bottom: 10px;
+}
+
+.gallery {
+  margin-bottom: 50px;
+}
+
+.gallery .title__text {
+  margin-bottom: 60px;
+}
+
+.gallery .gallery__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.gallery .gallery__cards .gallery__img {
+  width: 430px;
+  padding: 15px;
+  -webkit-box-shadow: 0px 10px 30px -3px #ccc;
+          box-shadow: 0px 10px 30px -3px #ccc;
+}
+
+.gallery .gallery__cards .gallery__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.user {
+  margin: 100px 0;
+}
+
+.user .title__text {
+  margin-bottom: 70px;
+}
+
+.user .user__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.user .user__cards .user__card {
+  padding: 20px;
+  -webkit-box-shadow: 0 1rem 2rem rgba(71, 71, 71, 0.1);
+          box-shadow: 0 1rem 2rem rgba(71, 71, 71, 0.1);
+  text-align: center;
+  width: 430px;
+  margin-top: 50px;
+}
+
+.user .user__cards .user__card img {
+  border-radius: 50%;
+  width: 33%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 20px 0;
+}
+
+.user .user__cards .user__card h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #636161;
+}
+
+.user .user__cards .user__card p {
+  color: #636161;
+}
+
+.user .user__cards .user__card i {
+  color: var(--orange);
+  margin: 20px 0;
+}
+
+@media (max-width: 1430px) {
+  .pakages .row__top .travel__cards .card__one #end__img {
+    height: auto;
+  }
+  #aftanom {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 1330px) {
+  .services .card__top .card {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title__text {
+    margin-bottom: 40px;
+  }
+  .section__midle .section__text {
+    top: 40%;
+  }
+  .section__midle .section__text h1 {
+    font-size: 40px;
+  }
+  .book .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book .row .book__img, .book .row .book__registr {
+    width: 100%;
+  }
+}
+
+@media (max-width: 955px) {
+  .card__one {
+    width: 350px !important;
+  }
+  .gallery__img {
+    width: 330px !important;
+  }
+  .gallery__img img {
+    width: 100%;
+  }
+  .user .user__cards .user__card {
+    width: 350px;
+  }
+}
+
+@media (max-width: 900px) {
+  header .header__navbar ul #one, header .header__navbar ul #end {
+    margin-top: -50px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 75px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    margin: 0;
+  }
+  a:hover, a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+    height: 100%;
+  }
+  .dropdovn {
+    display: block;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 889px) {
+  .services .card__top .card {
+    width: 350px;
+  }
+}
+
+@media (max-width: 780px) {
+  .card__one {
+    width: 100% !important;
+  }
+  .gallery__img {
+    width: 100% !important;
+  }
+  .user .user__cards .user__card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 730px) {
+  .gallery__img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pakages .row__top .travel__cards .card__one .card__text {
+    text-align: center;
+    padding-left: 0;
+  }
+  .pakages .row__top .travel__cards .card__one .card__text .icon {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pakages .row__top .travel__cards .card__one .card__text .card__mony {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

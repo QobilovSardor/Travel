@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --orange:#ffa500;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    // font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s linear;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h4,h5,h6{
+    font-family: 'Nunito', sans-serif;
+}
+p, a span{
+    font-family: 'Nunito', sans-serif;
+}
+i {
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+// header-qsimi
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #333;
+    padding: 1rem 0;
+    z-index: 200;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // header__logo
+    .header__logo h1 a {
+        color: #fff;
+
+        span {
+            color: var(--orange);
+        }
+    }
+    // header__navbar
+    .header__navbar ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li a {
+            display: inline-block;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 .8rem;
+            font-family: 'Nunito', sans-serif;
+
+            &:hover {
+                color: var(--orange);
+            }
+        }
+        #one, #end {
+            margin: 0;
+        }
+    }
+
+    i {
+        color: #fff;
+        cursor: pointer;
+        padding-left: 15px;
+        font-size: 22px;
+
+        &:hover {
+            color: var(--orange);
+        }
+    }
+    i:nth-child(1) {
+        padding: 0;
+        margin: 0;
+    }
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.dropdovn{
+    display: none;
+}
+
+// section
+.section__midle {
+
+    .section__video video {
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+        height: 100vh;
+    }
+    .section__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        h1 {
+            color: #fff;
+            font-size: 50px;
+            font-weight: bold;
+            padding-bottom: 15px;
+        }
+        h3 {
+            color: #fff;
+            font-size: 30px;
+        }
+        .btn {
+            color: #fff;
+            background: var(--orange);
+            padding: 13px 35px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+            border: 1px solid var(--orange);
+
+            &:hover {
+                background:rgba(255, 165, 0,.2)
+            }
+        }
+    }
+}
+
+// title__text
+.title__text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        color: var(--orange);
+        background-color: rgb(255, 251, 192);
+        margin: 3px;
+        border-radius: 4px;
+        padding: 2px 15px;
+        font-size: 40px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+    }
+}
+// title__text
+.btn {
+    color: #fff;
+    background: var(--orange);
+    padding: 18px 40px;
+    border: none;
+    font-size: 18px;
+    margin-top: 22px;
+    border: 1px solid var(--orange);
+    cursor: pointer;
+
+    &:hover {
+        
+        background:transparent;
+        color: #000;
+    }
+}
+// BOOK-QISMI
+.book {
+    margin-top: 100px;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;    
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        .book__img {
+            width: 50%;
+            
+            img {
+                width: 100%;
+            }
+        }
+
+        .book__registr {
+            margin-top: 40px;
+            width: 47%;
+            // box-shadow: 0px 10px 30px -3px #ccc;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+            padding: 30px;
+
+            h2 {
+                color: #555;
+                padding: 15px 0;
+            }
+            input {
+                padding: 15px 15px;
+                width: 100%;
+                outline: none;
+                border: 1px solid rgb(219, 214, 214);
+            }
+
+        }
+    }
+}
+
+// PAKAGES-QSIMI
+.pakages {
+    margin-bottom: 100px;
+
+    .row__top {
+
+        .travel__cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 30px;
+
+            .card__one {
+                background: #fff;    
+                box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+                width: 430px;
+                margin-top: 50px;
+                
+                #end__img {
+                    height: 50%;
+                }
+                img {
+                    border-top-left-radius: 7px;
+                    border-top-right-radius: 7px;
+                    width: 100%;
+                }
+
+                .card__text {
+                    padding-left: 20px;
+                    padding-top: 20px;
+                    
+                    p {
+                        color: rgb(92, 88, 88);
+                    }
+
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        padding-bottom: 10px;
+                        
+                        i {
+                            color: var(--orange);
+                            padding-right: 10px;
+                        }
+                    }
+
+                    i {
+                        color: var(--orange);
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+
+                    .card__mony {
+                        display: flex;
+                        align-items: center;
+
+                        h2 {
+                            color: rgb(92, 88, 88);
+                        }
+                        
+                        h4 {
+                            position: relative;
+                            margin-left: 10px;
+                            color: #ccc;
+                        }
+                        h4::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%);
+                            background: #ccc;
+                            width: 100%;
+                            height: 1px;
+                        }   
+                    }
+                    .btn {
+                        margin-bottom: 20px;
+                        font-weight: bold;  
+                    }
+                }
+            }
+        }
+    }
+}
+
+// SERVICES-QISMI
+.services {
+    margin-bottom: 100px;
+
+    .card__top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 70px;
+
+        .card {
+            background: #fff;
+            width: 400px;
+            padding: 30px;
+            text-align: center;
+            
+            &:hover {
+                box-shadow: 0px 10px 30px -3px #ccc;
+            }
+            i {
+                color: var(--orange);
+                padding-bottom: 10px;
+            }
+            h2, p {
+                color: rgb(73, 72, 72);
+            }
+            h2 {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+// GALLERY-QISMI
+.gallery {
+    margin-bottom: 50px;
+    .title__text {
+        margin-bottom: 60px;
+    }
+    .gallery__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+
+        .gallery__img {
+            width: 430px;
+            padding: 15px;
+            box-shadow: 0px 10px 30px -3px #ccc;
+
+            img {
+                width:100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// USER-QISMI
+.user {
+    margin: 100px 0;
+    
+    .title__text {
+        margin-bottom: 70px;
+    }
+
+    .user__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .user__card {
+            padding: 20px;
+            box-shadow: 0 1rem 2rem rgba(71, 71, 71, 0.1);
+            text-align: center;
+            width: 430px;
+            margin-top: 50px;
+
+            img {
+                border-radius: 50%;
+                width: 33%;
+                object-fit: cover;  
+                margin: 20px 0;
+            }   
+            h2{
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: rgb(99, 97, 97);
+            }
+            p {
+                color: rgb(99, 97, 97);
+            }
+            i {
+                color: var(--orange);
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 1432px
+@media (max-width: 1430px) {
+    .pakages .row__top .travel__cards .card__one #end__img {
+        height: auto;
+    }
+    #aftanom {
+        margin-top: 25px;
+    }
+}
+// 1332px
+@media (max-width: 1330px) {
+    .services .card__top .card {
+        margin-top: 30px;
+    }
+}
+// 1200px
+@media (max-width: 1200px) {
+    .title__text {
+        margin-bottom: 40px;
+    }
+    .section__midle .section__text {
+        top: 40%;
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+    .book {
+
+        .row {
+            flex-direction: column;
+
+            .book__img, .book__registr {
+                width: 100%;
+            }
+        }
+    }
+}
+// 955px
+@media(max-width: 955px) {
+
+    .card__one {
+        width: 350px !important;
+    }
+    .gallery__img {
+        width: 330px !important;
+
+        img {
+            width: 100%;
+        }
+    }
+    .user .user__cards .user__card {
+        width: 350px;
+    }
+}
+// 900px
+@media(max-width: 900px){
+
+    header .header__navbar ul #one, header .header__navbar ul #end {
+        margin-top: -50px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+        flex-direction: column;
+    }
+    nav ul li{
+        display: block;
+        margin: 20px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        margin: 0;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        height: 100%;
+    }
+    .dropdovn{
+        display: block;
+        margin-top: 25px;
+    }
+}
+// 889px
+@media (max-width: 889px) {
+    .services .card__top .card {
+        width: 350px;
+    }
+}
+// 730px
+@media (max-width: 780px) {
+    .card__one {
+        width: 100% !important;
+        // text-align: center;
+    }
+    .gallery__img {
+        width: 100% !important;
+    }
+    .user .user__cards .user__card {
+        width: 80%;
+    }
+}
+// 730px
+@media (max-width: 730px) {
+    .gallery__img {
+        margin-top: 20px;
+    }
+}
+// 600px
+@media (max-width: 600px) {
+    .pakages .row__top .travel__cards .card__one .card__text {
+        text-align: center;
+        padding-left: 0;
+
+        .icon {
+            justify-content: center;
+        }
+        .card__mony {
+            justify-content: center;
+        }
+    }
+    
+}
